@@ -1055,6 +1055,10 @@ export const generatePayload = (
     delete payload.jsonApiData.data.id;
   }
 
+  if (resource.isMetaOnly) {
+    delete payload.jsonApiData.data;
+  }
+
   // 'DELETE' only needs a query and it also needs an id in its query
   // 'PATCH' also needs an id in its query
   // 'POST' needed locally to allow to write back errors to store if id is available

@@ -193,6 +193,7 @@ export interface Resource extends ResourceIdentifier {
   attributes?: { [key: string]: any };
   relationships?: { [key: string]: ResourceRelationship };
   meta?: any;
+  isMetaOnly?: boolean;
   links?: any;
 }
 

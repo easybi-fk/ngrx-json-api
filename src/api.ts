@@ -197,7 +197,7 @@ export class NgrxJsonApi {
     let requestOptions = {
       method: 'POST',
       url: this.urlBuilder(query, 'POST'),
-      body: JSON.stringify({ data: document.data }),
+      body: JSON.stringify(document),
     };
 
     return this.request(requestOptions);
@@ -214,7 +214,7 @@ export class NgrxJsonApi {
     let requestOptions = {
       method: 'PATCH',
       url: this.urlBuilder(query, 'PATCH'),
-      body: JSON.stringify({ data: document.data }),
+      body: JSON.stringify(document),
     };
 
     return this.request(requestOptions);
