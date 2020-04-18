@@ -1,0 +1,32 @@
+import { OnDestroy } from '@angular/core';
+import { Action, Store } from '@ngrx/store';
+import { Actions } from '@ngrx/effects';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/concatAll';
+import { ApiDeleteFailAction, ApiDeleteSuccessAction, ApiGetInitAction, LocalQueryFailAction, LocalQuerySuccessAction } from './actions';
+import { NgrxJsonApi } from './api';
+export declare class NgrxJsonApiEffects implements OnDestroy {
+    private actions$;
+    private jsonApi;
+    private store;
+    createResource$: Observable<Action>;
+    updateResource$: Observable<Action>;
+    readResource$: Observable<Action>;
+    private localQueryInitEventFor;
+    private removeQueryEventFor;
+    queryStore$: Observable<LocalQuerySuccessAction | LocalQueryFailAction>;
+    private executeLocalQuery;
+    deleteResource$: Observable<ApiDeleteSuccessAction | ApiDeleteFailAction>;
+    triggerReadOnQueryRefresh$: Observable<ApiGetInitAction>;
+    refreshQueriesOnDelete$: Observable<Action>;
+    private handlePendingCreate;
+    private handlePendingUpdate;
+    private handlePendingDelete;
+    applyResources$: Observable<Action>;
+    private config;
+    constructor(actions$: Actions, jsonApi: NgrxJsonApi, store: Store<any>);
+    ngOnDestroy(): void;
+    private toApplyAction;
+    private toErrorPayload;
+    private generatePayload;
+}

@@ -1,0 +1,6 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,uselessCode} checked by tsc
+ */
+export { SelectStoreResourcePipe, SelectStoreResourcesPipe, DenormaliseStoreResourcePipe, GetDenormalisedValuePipe, NgrxJsonApiService, NgrxJsonApiZoneService, NgrxJsonApiModule, NGRX_JSON_API_CONFIG, uuid, NGRX_JSON_API_DEFAULT_ZONE, Direction, NgrxJsonApiActionTypes, NgrxJsonApiAction, ApiApplyInitAction, ApiApplySuccessAction, ApiApplyFailAction, ApiPostInitAction, ApiPostSuccessAction, ApiPostFailAction, ApiDeleteInitAction, ApiDeleteSuccessAction, ApiDeleteFailAction, ApiGetInitAction, ApiGetSuccessAction, ApiGetFailAction, ApiRollbackAction, ApiPatchInitAction, ApiPatchSuccessAction, ApiPatchFailAction, DeleteStoreResourceAction, PatchStoreResourceAction, NewStoreResourceAction, PostStoreResourceAction, RemoveQueryAction, LocalQueryInitAction, LocalQuerySuccessAction, LocalQueryFailAction, CompactStoreAction, ClearStoreAction, ApiQueryRefreshAction, ModifyStoreResourceErrorsAction, selectNgrxJson, selectNgrxJsonApiDefaultZone, selectNgrxJsonApiZone, getNgrxJsonApiZone, selectStoreQuery, selectStoreResourcesOfType, selectStoreResource, selectStoreResources, selectManyQueryResult, selectOneQueryResult, getNgrxJsonApiStore, NgrxJsonApiSelectors } from './src/index';
+//# sourceMappingURL=index.js.map
